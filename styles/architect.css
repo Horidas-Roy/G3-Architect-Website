@@ -4,6 +4,8 @@
 /* shared style */
 * {
   font-family: "Work Sans";
+  padding: 0;
+  margin: 0;
 }
 .section-tittle {
   color: #131313;
@@ -12,6 +14,8 @@
 }
 .section-description {
   color: #727272;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -71,7 +75,7 @@ nav li a {
 
 /* main section related style */
 main {
-  max-width: 1440px;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -80,6 +84,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .team-img-container {
   display: grid;
@@ -104,7 +109,61 @@ main {
   color: #ff900e;
   font-weight: 700;
 }
+
+/* feature related style */
+
+.feature-content .section-tittle{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+  margin: 0 auto;
+
+}
+.feature-container{
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+
+}
+.feature-container .card{
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(2, 2, 2, 0.06);
+width: 400px;
+padding: 10px 20px;
+margin: 10px;
+
+}
+.feature-photo{
+   width: 45vw;
+}
+
+.feature-img{
+  height: 50%;
+  
+}
+.ten-years-badge{
+  border-radius: 8px;
+background: #FF900E;
+width: 280px;
+color: #FFF;
+text-align: center;
+padding:2rem 0.5rem;
+position: relative;
+bottom: 50px;
+left: -30px;
+}
+.ten-years-badge h3{
+  font-size: 2.5rem;
+  margin: 0px;
+}
+.ten-years-badge p{
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+
 /* fact section related style */
+
 .facts-card-container {
   display: flex;
   justify-content: space-around;
@@ -143,6 +202,16 @@ margin-top: 5px;
 .sponsor-img-container img{
   width: 160px;
 }
+
+/* footer related style */
+
+.footer{
+  color: #424242;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+padding: 2.5rem ;
+}
 /* Responsive Media Query*/
 
 /* small media responsive */
@@ -150,8 +219,12 @@ margin-top: 5px;
   header {
     padding: 10px 10px;
   }
+  main{
+    padding: 0 50px;
+  }
   nav,
   .team-container,
+  .feature-container,
   .facts-card-container,
   .sponsor-img-container {
     flex-direction: column;
@@ -163,6 +236,7 @@ margin-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
   }
+  
   .facts-card-container{
     gap: 20px;
   }
@@ -176,6 +250,7 @@ margin-top: 5px;
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav,
   .team-container,
+  .feature-container,
   .sponsor-img-container {
     flex-direction: column;
   }
